@@ -1,1 +1,1 @@
-Samu Krisztina portfólió oldala reactben
+Samu Krisztina portfólió oldala React/Next.js
