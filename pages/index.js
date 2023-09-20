@@ -1,21 +1,33 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
+import Link from 'next/link'
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Samu Krisztina</title>
       </Head>
 
       <main>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Read <Link href="/about">about!</Link>
+        </h1>
+        <h1 className={styles.title}>
+          Read <Link href="/contact">contact!</Link>
+        </h1>
+        <h1 className={styles.title}>
+          Read <Link href="/feedback">feedback!</Link>
+        </h1>
+        <h1 className={styles.title}>
+          Read <Link href="/portfolio">portfolio!</Link>
+        </h1>
+        <h1 className={styles.title}>
+          Read <Link href="/skills_and_tools">skills_and_tools!</Link>
         </h1>
 
         <p className={styles.description}>
-          Get started by editing <code>pages/index.js</code>
+          Hello!
         </p>
 
         <div className={styles.grid}>
