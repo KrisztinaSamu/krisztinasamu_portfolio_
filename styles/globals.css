@@ -1,5 +1,15 @@
+
+:root {
+  --mainColor: #e7c491;
+  --mainColorLight: #bdaf9a;
+  --secondaryColor: #150886;
+  --textColor: #d9dedf;
+
+}
+
 html,
 body {
+  height: 100%;
   padding: 0;
   margin: 0;
   font-family:
