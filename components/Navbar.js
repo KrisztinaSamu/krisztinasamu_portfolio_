@@ -7,6 +7,10 @@ import React, { useState } from "react";
 export default function Navbar() {
   const [active, setActive] = useState(false);
 
+  function handleNav() {
+    setActive(!active);
+  }
+
   return (
     <header className={navbar.headerContainer}>
       <nav className={navbar.navContainer}>
@@ -17,8 +21,9 @@ export default function Navbar() {
             </Link>
           </h1>
         </div>
-        <div className={navbar.navLinks}>
-          <ul className={active ?"active" : ""}>
+
+        <div className={active ? navbar.navLinks : navbar.active}>
+          <ul className={navbar.navLinksUl}>
             <li className={navbar.navLinkItem}>
               <Link href="/about" className={navbar.navLinkText}>
                 Rólam
@@ -46,7 +51,8 @@ export default function Navbar() {
             </li>
           </ul>
         </div>
-        <button onClick={() => setActive(!active)}>
+
+        <button className={active ? navbar.hamburgerMenuBtn : navbar.hamburgerMenuBtn.active} onClick={handleNav}>
           <div className={navbar.bar}></div>
           <div className={navbar.bar}></div>
           <div className={navbar.bar}></div>

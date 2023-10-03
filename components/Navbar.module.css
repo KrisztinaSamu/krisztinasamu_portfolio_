@@ -17,44 +17,39 @@
   align-items: center;
 }
 
-/*.navLinks {
-  display: none;
-}*/
 .navLinks {
-  background: aqua;
-  border: 2px solid black;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 50vh;
-  display: none;
-}
-.active {
-  display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   justify-content: space-evenly;
   align-items: center;
-  transition: 0.8s ease;
-  padding-left: 0;
+  /**/background: aqua;
+  /**/border: 2px solid black;
+  position: fixed;
+  top: -100%;
+  left: 0;
   width: 100%;
-  height: 50vh;
+  height: 100vh;
+  transition: 0.8s ease;
 }
 
-@media screen and (min-width: 600px) {
-  .navLinks {
-    height: auto;
-    position: relative;
-    left: 0;
-    top: 0;
-    gap: 60px;
-    flex-flow: row nowrap;
-    justify-content: flex-end;
-  }
-}
+.navLinks.active {
+  top:0;
+  background-color: rgb(150, 21, 21);
+  /*position: fixed;
+  top: 0;
+  width: 100vw;
+  flex-flow: column nowrap;
+  text-align: center;*/
+}/*{
+  
+  
+  
+  
+  
+}*/
 
 .navLinkItem {
-  margin: 0 2px;
+  padding: 1rem;
+  font-size: 1.5rem;
 }
 
 .navLinkText {
@@ -73,25 +68,44 @@
   margin: 20px 50px 20px 0;
 }
 
+.hamburgerMenuBtn {
+  background-color: transparent;
+  border: none
+}
+
 .bar {
-  width: 1.6rem;
-  height: 2px;
+  width: 2rem;
+  height: 0.2rem;
   background-color: black;
-  border: 1px solid black;
   margin: 5px;
-  border-radius: 5px;
+  border-radius:5px;
 }
-/*.bar:nth-child(2) {
-  width: 1.3rem;
-}
-.hamburgerMenu .active .bar:nth-child(2) {
+
+.hamburgerMenuBtn.active .bar:nth-child(2) {
   opacity: 0;
 }
 
-.hamburgerMenu .active .bar:nth-child(1) {
+.hamburgerMenuBtn.active .bar:nth-child(1) {
   transform: translateY(7px) rotate(45deg);
 }
 
-.hamburgerMenu .active .bar:nth-child(3) {
+.hamburgerMenuBtn.active .bar:nth-child(3) {
   transform: translateY(-7px) rotate(-45deg);
-}*/
+}
+@media screen and (min-width: 600px) {
+  .navLinks {
+    height: auto;
+    position: relative;
+    left: 0;
+    top: 0;
+    flex-flow: row nowrap;
+  }
+  
+  .navLinksUl {
+    display: inline-flex;
+  }
+
+  .hamburgerMenuBtn {
+    display: none;
+  }
+}
