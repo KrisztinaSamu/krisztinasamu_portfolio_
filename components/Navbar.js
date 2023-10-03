@@ -1,68 +1,56 @@
+"use client";
+
 import Link from "next/link";
-import {
-  headerContainer,
-  navContainer,
-  navLinks,
-  navLinkItem,
-  navLinkText,
-  logo,
-  bar,
-  hamburgerMenu
-  
-} from "./Navbar.module.css";
+import navbar from "./Navbar.module.css";
 import React, { useState } from "react";
 
 export default function Navbar() {
-  const [isActive, setIsActive] = useState(false);
-  const toggleClass = () => {
-    setIsActive(!isActive);
-  };
+  const [active, setActive] = useState(false);
+
   return (
-    <header className={headerContainer}>
-      <nav className={navContainer}>
-        <div className={`myElement ${isActive ? "active" : ""}`}>
-          <div className={logo}>
-            <h1 className={navLinkItem}>
-              <Link href="/" className={navLinkText}>
-                Samu Krisztina
-              </Link>
-            </h1>
-          </div>
-          <ul className={navLinks}>
-            <li className={navLinkItem}>
-              <Link href="/about" className={navLinkText}>
+    <header className={navbar.headerContainer}>
+      <nav className={navbar.navContainer}>
+        <div className={navbar.logo}>
+          <h1 className={navbar.navLinkItem}>
+            <Link href="/" className={navbar.navLinkText}>
+              Samu Krisztina
+            </Link>
+          </h1>
+        </div>
+        <div className={navbar.navLinks}>
+          <ul className={active ?"active" : ""}>
+            <li className={navbar.navLinkItem}>
+              <Link href="/about" className={navbar.navLinkText}>
                 Rólam
               </Link>
             </li>
-            <li className={navLinkItem}>
-              <Link href="/portfolio" className={navLinkText}>
+            <li className={navbar.navLinkItem}>
+              <Link href="/portfolio" className={navbar.navLinkText}>
                 Portfólió
               </Link>
             </li>
-            <li className={navLinkItem}>
-              <Link href="/skills_and_tools" className={navLinkText}>
+            <li className={navbar.navLinkItem}>
+              <Link href="/skills_and_tools" className={navbar.navLinkText}>
                 Készségek és eszközök
               </Link>
             </li>
-            <li className={navLinkItem}>
-              <Link href="/feedback" className={navLinkText}>
+            <li className={navbar.navLinkItem}>
+              <Link href="/feedback" className={navbar.navLinkText}>
                 Visszacsatolás
               </Link>
             </li>
-            <li className={navLinkItem}>
-              <Link href="/contact" className={navLinkText}>
+            <li className={navbar.navLinkItem}>
+              <Link href="/contact" className={navbar.navLinkText}>
                 Kapcsolat
               </Link>
             </li>
           </ul>
         </div>
-        <div className={`hamburgerMenu ${isActive ? "active" : ""}`}>
-          <button onClick={toggleClass}>
-            <div className={bar}></div>
-            <div className={bar}></div>
-            <div className={bar}></div>
-          </button>
-        </div>
+        <button onClick={() => setActive(!active)}>
+          <div className={navbar.bar}></div>
+          <div className={navbar.bar}></div>
+          <div className={navbar.bar}></div>
+        </button>
       </nav>
     </header>
   );
