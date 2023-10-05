@@ -22,7 +22,7 @@ export default function Navbar() {
           </h1>
         </div>
 
-        <div className={active ? navbar.navLinks : navbar.active}>
+        <div className={`${navbar.navLinks} ${active ? navbar.active : ''}`}>
           <ul className={navbar.navLinksUl}>
             <li className={navbar.navLinkItem}>
               <Link href="/about" className={navbar.navLinkText}>
@@ -52,7 +52,7 @@ export default function Navbar() {
           </ul>
         </div>
 
-        <button className={active ? navbar.hamburgerMenuBtn : navbar.hamburgerMenuBtn.active} onClick={handleNav}>
+        <button className={`${navbar.hamburgerMenuBtn} ${active ? navbar.active : ''}`} onClick={handleNav}>
           <div className={navbar.bar}></div>
           <div className={navbar.bar}></div>
           <div className={navbar.bar}></div>
