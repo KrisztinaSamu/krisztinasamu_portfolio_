@@ -1,6 +1,6 @@
 
 :root {
-  --mainColor: #e7c491;
+  --mainColor: /*#e7c491*/#e2e3eb;
   --mainColorLight: #bdaf9a;
   --secondaryColor: #150886;
   --textColor: #d9dedf;

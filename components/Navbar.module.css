@@ -7,18 +7,14 @@
 
 .headerContainer {
   margin: auto;
-  width: 100%;
-  background-color: var(--mainColor);
 }
 
 .navContainer {
   width: 100%;
-  padding: 1rem;
   align-items: center;
 }
 
 .navLinks {
-  background-color: var(--mainColor);
   position: fixed;
   top: 0;
   left: -100%;
@@ -36,6 +32,7 @@
 
 .active {
   left: 0;
+  background-color: aqua;
 }
 
 .navLinkItem {
