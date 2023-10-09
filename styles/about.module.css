@@ -1,0 +1,27 @@
+.sectionBox,
+.aboutBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutBox {
+  align-items: center;
+  text-align: justify;
+  width: 100%;
+  padding: 1rem;
+}
+
+.aboutHeader {
+ text-align: center;
+ padding: 2rem 0;
+}
+
+.greetingText {
+  font-size: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+/*@media screen and (min-width: 600px) {
+    
+    
+}*/

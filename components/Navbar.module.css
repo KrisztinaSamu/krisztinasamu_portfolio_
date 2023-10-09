@@ -7,10 +7,14 @@
 
 .headerContainer {
   margin: auto;
+  position: fixed;
+  top: 0%;
+  z-index: 1000;
 }
 
 .navContainer {
-  width: 100%;
+  width: 100vw;
+  background-color: rgba(148, 185, 255, 1);
   align-items: center;
 }
 

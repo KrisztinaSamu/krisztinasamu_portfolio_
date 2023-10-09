@@ -15,7 +15,7 @@ export default function Navbar() {
     <header className={navbar.headerContainer}>
       <nav className={navbar.navContainer}>
         <div className={navbar.logo}>
-          <h1 className={navbar.navLinkItem}>
+          <h1>
             <Link href="/" className={navbar.navLinkText}>
               Samu Krisztina
             </Link>
