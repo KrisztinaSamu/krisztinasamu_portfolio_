@@ -3,16 +3,20 @@ import styles from "../styles/Layout.module.css";
 import Navbar from "./Navbar";
 import "../styles/Navbar.module.css";
 import Main from "./Main";
+import Footer from "./Footer";
 
 export default function Layout({ children }) {
   return (
-    <div className={styles.container}>
+    <>
       <Head>
         <title>Samu Krisztina</title>
         <meta name="keywords" content="frontend, webfejlesztő" />
       </Head>
-      <Navbar />
-      <Main>{children}</Main>
-    </div>
+      <div className={styles.container}>
+        <Navbar />
+        <Main>{children}</Main>
+        <Footer />
+      </div>
+    </>
   );
 }

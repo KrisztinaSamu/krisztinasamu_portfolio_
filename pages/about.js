@@ -41,8 +41,8 @@ export default function AboutPost() {
           <Image
             src="/samu_krisztina.png"
             alt="my-photo"
-            width={300}
-            height={300}
+            width={200}
+            height={200}
           />
         </div>
       </div>
