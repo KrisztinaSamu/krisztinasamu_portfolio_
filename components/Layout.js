@@ -1,7 +1,8 @@
 import Head from "next/head";
 import styles from "../styles/Layout.module.css";
 import Navbar from "./Navbar";
-import "./Navbar.module.css";
+import "../styles/Navbar.module.css";
+import Main from "./Main";
 
 export default function Layout({ children }) {
   return (
@@ -11,9 +12,7 @@ export default function Layout({ children }) {
         <meta name="keywords" content="frontend, webfejlesztő" />
       </Head>
       <Navbar />
-      <main className={styles.container}>
-        <div className={styles.section}>{children}</div>
-      </main>
+      <Main>{children}</Main>
     </div>
   );
 }

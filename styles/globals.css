@@ -3,7 +3,7 @@
   --mainColor: /*#e7c491*/#e2e3eb;
   --mainColorLight: #bdaf9a;
   --secondaryColor: #150886;
-  --textColor: #d9dedf;
+  --textColor: #15535f;
 
 }
 
@@ -24,6 +24,7 @@ body {
     Droid Sans,
     Helvetica Neue,
     sans-serif;
+  letter-spacing: 0.6px;
 }
 
 a {
@@ -44,4 +45,10 @@ img {
 
 li {
   list-style: none;
+}
+
+p {
+  color: var(--textColor);
+  line-height: 1.6rem;
+  padding-bottom: 1.5rem;
 }

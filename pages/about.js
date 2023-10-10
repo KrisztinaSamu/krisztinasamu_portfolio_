@@ -9,33 +9,23 @@ export default function AboutPost() {
       <div className={aboutStyles.sectionBox}>
         <div className={aboutStyles.aboutBox}>
           <div className={aboutStyles.aboutHeader}>
-            <h1 class={aboutStyles.greetingText}>Szia, Kriszti vagyok!</h1>
-            <h2 class="profession-text">Junior frontend fejlesztő Szegedről</h2>
+            <h1 className={aboutStyles.greetingText}>Szia, Kriszti vagyok!</h1>
+            <h2>Junior frontend fejlesztő Szegedről</h2>
           </div>
-          <p class="about-text">
+
+          <p>
             Kereskedelemből érkező, elszánt szakmaváltó vagyok. Hosszú távon az
             IT és a webfejlesztés világa biztosítja számomra a lehetőséget arra,
             hogy értéket és hasznot teremtő munkát végezzek mások számára is,
             miközben folyamatosan fejlődöm és kilépek a komfortzónámból.
           </p>
-          <p class="about-text">
+          <p>
             Eddig a HTML, CSS, SCSS, JavaScript, Bootstrap, React, SQL alapjait
             sajátítottam el. Fejlesztés közben jól alkalmazom az önálló
             problémamegoldó, a hibákat gyorsan felismerő, és javító
             képességeimet.
           </p>
-          <p class="about-text">
-            Ismereteimet folyamatosan bővítem, ezért
-            <span class="small-textSize">
-              <i class="fab fa-google fa-1x"></i>oogle
-            </span>
-            és
-            <span class="small-textSize">
-              <i class="fab fa-stack-overflow fa-1x"></i>stack
-              <b>overflow</b>
-            </span>
-            a legjobb barátom :)
-          </p>
+          
           <div class="cta">
             <a href="#portfolio" class="btn btn-cta">
               Portfólió megtekintése <span class="arrow"></span>
@@ -51,8 +41,8 @@ export default function AboutPost() {
           <Image
             src="/samu_krisztina.png"
             alt="my-photo"
-            width={200}
-            height={200}
+            width={300}
+            height={300}
           />
         </div>
       </div>
