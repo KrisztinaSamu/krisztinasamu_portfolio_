@@ -1,16 +1,25 @@
+.layout,
+.socialMedia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .layout {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    
+  flex-flow: column nowrap;
+}
+
+.designLine {
+  border-top: 3px solid #171f38;
 }
 
 .socialMedia {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
+  flex-flow: row nowrap;
+
 }
 
 .socialMediaIcon {
-    padding: 1rem;
+  padding: 1.5rem;
+  width: 8rem;
+  text-align: center;
 }

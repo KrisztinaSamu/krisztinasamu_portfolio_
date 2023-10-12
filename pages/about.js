@@ -1,7 +1,8 @@
-
 import Layout from "../components/Layout.js";
 import aboutStyles from "../styles/about.module.css";
 import Image from "next/image";
+import Button from "../components/Button.js";
+import styleButton from "../styles/Button.module.css"
 
 export default function AboutPost() {
   return (
@@ -25,15 +26,18 @@ export default function AboutPost() {
             problémamegoldó, a hibákat gyorsan felismerő, és javító
             képességeimet.
           </p>
-          
-          <div class="cta">
-            <a href="#portfolio" class="btn btn-cta">
-              Portfólió megtekintése <span class="arrow"></span>
-            </a>
 
-            <a href="resume.html" class="btn btn-cta" target="_blank">
-              Önéletrajz megtekintése <span class="arrow"></span>
-            </a>
+          <div class="cta">
+            <Button style={styleButton.neumorphic}>
+              <a href="#portfolio">
+                Portfólió megtekintése <span class="arrow"></span>
+              </a>
+            </Button>
+            <Button style={styleButton.neumorphic}>
+              <a href="resume.html" class="btn btn-cta" target="_blank">
+                Önéletrajz megtekintése <span class="arrow"></span>
+              </a>
+            </Button>
           </div>
         </div>
 

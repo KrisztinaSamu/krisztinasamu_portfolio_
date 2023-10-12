@@ -1,0 +1,30 @@
+.button {
+  cursor: pointer;
+  text-align: center;
+  color: var(--textColor);
+  font-size: 1.2rem;
+  width: auto;
+  border: 3px solid #bbc4d1;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 2rem 0;
+  line-height: 1.5;
+  transition: all 0.1s ease-in-out;
+}
+
+.button:hover {
+  border: 3px solid #2c60a8;
+  box-shadow: 1px 1px 2px#2c60a8;
+}
+
+.neumorphic {
+  box-shadow: -6px -6px 10px rgba(231, 243, 238, 0.8),
+    6px 6px 10px rgba(47, 56, 59, 0.2);
+  border: 0px solid #adc6e7;
+}
+
+.neumorphic:hover {
+  box-shadow: inset -6px -6px 10px rgba(231, 243, 238, 0.8),
+    inset 2px 4px 8px rgba(81, 92, 95, 0.2);
+  border: 0px solid #bbc4d1;
+}

@@ -1,26 +1,32 @@
 .headerContainer,
-.navContainer {
+.navContainer,
+.navLinksUl {
+  width: 100%;
   display: flex;
-  flex-flow: row nowrap;
   justify-content: center;
+  align-items: center;
+}
+
+.headerContainer,
+.navContainer {
+  flex-flow: row nowrap;
+}
+
+.headerContainer,
+.navLinks {
+  position: fixed;
+  top: 0;
 }
 
 .headerContainer {
-  margin: auto;
-  position: fixed;
-  top: 0%;
   z-index: 1000;
 }
 
 .navContainer {
-  width: 100vw;
   background-color: rgb(175, 200, 247);
-  align-items: center;
 }
 
 .navLinks {
-  position: fixed;
-  top: 0;
   left: -100%;
   width: 100%;
   transition: 0.8s ease;
@@ -28,14 +34,11 @@
 
 .navLinksUl {
   height: 100vh;
-  display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
 }
 
 .active {
-  left: 0;
+  left: 0%;
   background-color: aqua;
 }
 
@@ -103,6 +106,7 @@
   .bar {
     display: none;
   }
+  
   .navLinksUl {
     height: auto;
     flex-direction: row;

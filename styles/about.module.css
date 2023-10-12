@@ -4,6 +4,10 @@
   flex-direction: column;
 }
 
+.sectionBox {
+  margin-top: 5rem;
+}
+
 .aboutBox {
   align-items: center;
   text-align: justify;
