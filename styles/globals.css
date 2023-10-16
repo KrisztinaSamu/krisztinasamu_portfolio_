@@ -1,5 +1,5 @@
 :root {
-  --mainColor: /*#e7c491*/ #e2e3eb;
+  --mainColor: #e2e3eb;
   --mainColorLight: #bdaf9a;
   --secondaryColor: #150886;
   --textColor: #15535f;
@@ -18,6 +18,10 @@ body {
     rgba(205, 255, 216, 1) 0%,
     rgba(148, 185, 255, 1) 100%
   );
+}
+
+body {
+  height: 100%;
 }
 
 a {

@@ -106,9 +106,13 @@
   .bar {
     display: none;
   }
-  
+
   .navLinksUl {
     height: auto;
     flex-direction: row;
+  }
+
+  .active {
+    background-color: inherit;
   }
 }

@@ -23,7 +23,7 @@ export default function Navbar() {
         </div>
 
         <div className={`${navbar.navLinks} ${active ? navbar.active : ''}`}>
-          <ul className={navbar.navLinksUl}>
+          <ul className={navbar.navLinksUl} onClick={handleNav}>
             <li className={navbar.navLinkItem}>
               <Link href="/about" className={navbar.navLinkText}>
                 Rólam
