@@ -7,7 +7,9 @@ export default function Layout(props) {
   return (
     <div className={styles.pageWrapper}>
       <Navbar />
-      <main className={styles.mainContainer}>{props.children}</main>
+      <main className={styles.mainContainer}>
+        <div>{props.children}</div>
+      </main>
       <Footer />
     </div>
   );

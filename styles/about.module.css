@@ -21,7 +21,7 @@
 }
 
 .greetingText {
-  font-size: 2rem;
+  font-size: /*2rem*/ calc(1.8rem + .6vw);
   padding-bottom: 1.5rem;
 }
 
