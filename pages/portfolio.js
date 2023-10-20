@@ -10,7 +10,22 @@ export default function PortfolioPage() {
       <div>
         {cardList.map((card, index) => (
           <div className={styles.cardContainer}>
-            <Image src={card.img} className={styles.cardImg} alt="" width={200} height={200} />
+            <div className={styles.imgBox}>
+              <Image
+                src={card.img1}
+                className={styles.cardImg}
+                alt=""
+                width={200}
+                height={200}
+              />
+              <Image
+                src={card.img2}
+                className={`${styles.cardImg} ${styles.flipImg}`}
+                alt=""
+                width={200}
+                height={200}
+              />
+            </div>
             <h2 className={styles.cardTitle}>{card.title}</h2>
 
             <p>{card.description}</p>
