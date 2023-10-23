@@ -10,6 +10,7 @@
 .headerContainer,
 .navContainer {
   flex-flow: row nowrap;
+  justify-content: flex-start;
 }
 
 .headerContainer,
@@ -49,7 +50,8 @@
 
 .navLinkText {
   display: flex;
-  color: black;
+  font-weight: 500;
+  color: var(--logoColor);
   text-decoration: none;
   text-align: center;
   transition: 0.5s ease;
@@ -58,11 +60,6 @@
 
 .navLinkText:hover {
   color: var(--secondaryColor);
-}
-
-.logo {
-  margin: 20px 50px 20px 0;
-  padding: 0;
 }
 
 .hamburgerMenuBtn {
@@ -75,7 +72,7 @@
 .bar {
   width: 2.4rem;
   height: 0.7rem;
-  background-color: black;
+  background-color: var(--logoColor);
   margin: 5px;
   border-radius: 5px;
 }

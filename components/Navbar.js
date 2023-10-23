@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import navbar from "../styles/Navbar.module.css";
 import React, { useState } from "react";
 
@@ -14,15 +15,20 @@ export default function Navbar() {
   return (
     <header className={navbar.headerContainer}>
       <nav className={navbar.navContainer}>
-        <div className={navbar.logo}>
+        <div className={navbar.logoBox}>
           <h1>
             <Link href="/" className={navbar.navLinkText}>
-              Samu Krisztina
+              <Image
+                src="/images/logo.png"
+                alt="my-logo"
+                width={100}
+                height={50}
+              />
             </Link>
           </h1>
         </div>
 
-        <div className={`${navbar.navLinks} ${active ? navbar.active : ''}`}>
+        <div className={`${navbar.navLinks} ${active ? navbar.active : ""}`}>
           <ul className={navbar.navLinksUl} onClick={handleNav}>
             <li className={navbar.navLinkItem}>
               <Link href="/about" className={navbar.navLinkText}>
@@ -52,7 +58,12 @@ export default function Navbar() {
           </ul>
         </div>
 
-        <button className={`${navbar.hamburgerMenuBtn} ${active ? navbar.active : ''}`} onClick={handleNav}>
+        <button
+          className={`${navbar.hamburgerMenuBtn} ${
+            active ? navbar.active : ""
+          }`}
+          onClick={handleNav}
+        >
           <div className={navbar.bar}></div>
           <div className={navbar.bar}></div>
           <div className={navbar.bar}></div>
