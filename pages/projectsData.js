@@ -15,7 +15,7 @@ export default [
   },
   {
     img1: "/images/www.png",
-    img2: "/images/w_w-w.png",
+    img2: "/images/w_w_w.png",
     title: "Webfejlesztő cég weboldala",
     description: "A weboladal, egy fiktív webfejlesztő cégnek készült.",
     techDescription:"",
@@ -23,7 +23,7 @@ export default [
   {
     img1: "/images/country_app.png",
     img2: "/images/country-app.png",
-    title: "React memória játék",
+    title: "Földrészek országai app",
     description: "Az alkalmazás, API segítségével a kiválasztott kontinens országait, és annak adatait jeleníti meg.",
     techDescription:"",
   },

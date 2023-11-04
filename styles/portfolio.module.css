@@ -15,14 +15,15 @@
 }
 
 .imgBox {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
   position: relative;
-  transition: transform 1.5s;
+  transition: all 1.5s ease-in-out;
   transform-style: preserve-3d;
 }
 
 .imgBox:hover {
-  transform: perspective(600px) rotateY(180deg);
+  transform: perspective(1000px) rotateY(180deg);
   cursor: pointer;
 }
 
@@ -37,7 +38,7 @@
 }
 
 .flipImg {
-  transform: rotateY(180deg);
+  transform: perspective(600px) rotateY(180deg);
   position: absolute;
 }
 
